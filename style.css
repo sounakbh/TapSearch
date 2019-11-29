@@ -1,0 +1,55 @@
+body {
+	background-color: #e67e22;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*TapSearch heading*/
+.heading {
+	color: #ecf0f1;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 400%;
+	font-weight: 1000;
+	padding-top: 15px;
+}
+.button {
+	border-radius: 10px;
+    border-width: 3.5px;
+    border-color: #d35400;
+    width: 110px;
+    height: 50px;
+    background-color: #c0392b;
+    color: white;
+    flex-grow: 3
+}
+#instructions {
+	text-align: center;
+	margin-bottom: 5%;
+}
+.ins_button {
+	width: 100px;
+	height: 40px;
+	margin-top: 1%;
+}
+/*Result heading*/
+h4 {
+	margin-top: 5%;
+	color: #ecf0f1;
+}
+/*çontains the three buttons*/
+.flex-container {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  padding-bottom: 5px;
+}
+#displayDocuments {
+	color: #ecf0f1;
+}
+footer {
+	margin-top: 10%;
+	text-align: center;
+	color: white;
+}
+.col-sm-8 {
+	border-right: 2px solid white;
+}

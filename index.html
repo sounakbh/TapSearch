@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>TapSearch</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Source+Sans+Pro&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+      <div class="heading">TapSearch</div>
+      <!-- Instructions for new user -->
+      <div id="instructions">
+      	<input type="submit" onclick="instructions()" value="Instructions" class="button ins_button">
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-8">
+
+            	<!-- User inputs the documents he wants to search -->
+               <textarea 
+                  style="width: 100%; height: 200px;" 
+                  id="textarea"
+                  placeholder="Each document should be separated by two new lines">
+				</textarea>
+
+               <div class="flex-container">
+               	   <!-- Adding Documents -->
+                  <input class="button" 
+                  	onclick="addDoc()" 
+                  	type="submit" 
+                  	value="Add Documents">
+                  	<!-- Generating the Inverted Index -->
+                  <input 
+                  	class="button" 
+                  	onclick="generateInvertedIndex()" 
+                  	type="submit" 
+                  	value="Generate Index">
+                  	<!-- Clearing the existing documents and indexes -->
+                  <input 
+                  	class="button" 
+                  	onclick="clearDocs()" 
+                  	type="submit" 
+                  	value="Clear Documents">
+               </div>
+               <!-- Display the documents input by the user -->
+               <ul id="displayDocuments">
+
+               </ul>
+            </div>
+
+            <!-- Searching for the word -->
+            <div class="col-sm-4">	
+               <input 
+               	type="text" 
+               	id="search_word" 
+               	name="search_word">
+               <input 
+               	class="button" 
+               	onclick="searchDocs()" 
+               	type="submit" 
+               	value="Search Word">
+               <h4>Word is present in documents: </h4>
+
+               <!-- Results are displayde here -->
+               <div id="results">
+               	
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <footer class="footer">
+         <p>&#169; Sounak Bhattacharya</p>
+      </footer>
+
+      <script src="script.js"></script>
+   </body>
+</html>
